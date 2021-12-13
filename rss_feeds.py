@@ -222,7 +222,6 @@ allheadlines.sort(key=lambda hl:hl[0]['updated_parsed'], reverse=True)
 
 title = allheadlines[0][0]['title']
 link = allheadlines[0][0]['link']
-latest = [title,link]
 
 ##finally, save news to file
 with open('feed_data.txt','w') as outfile:
